@@ -5,7 +5,7 @@ pengguna menjawab serangkaian soal dan langsung mendapat umpan balik benar atau 
 
 Project page : https://roadmap.sh/projects/quiz-app
 
-Live demo :https://triaamsss.github.io/web-dev-quiz/
+Live demo : https://web-dev-quiz-psi.vercel.app/
 
 ## Fitur
 
