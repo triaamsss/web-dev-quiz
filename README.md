@@ -1,55 +1,54 @@
-## Kuis Web Development
+## Web Dev Quiz
 
-Aplikasi kuis pilihan ganda berbasis browser, dibuat dengan React dan Vite.
-pengguna menjawab serangkaian soal dan langsung mendapat umpan balik benar atau salah.
+A browser-based multiple-choice quiz built with React and Vite. Users answer a series of questions an get instant feedback on whether each answer is right or wrong.
 
 Project page : https://roadmap.sh/projects/quiz-app
 
 Live demo : https://web-dev-quiz-psi.vercel.app/
 
-## Fitur
+## Features
 
-- Layar awal berisi informasi kuis dan tombol "Mulai"
-- Soal ditampilkan sebagai kartu dengan jawaban berupa tombol
-- Jawaban benar berwarna hijau, jawaban salah berwarna merah, dan jawaban benar selalu ditandai
-- Skor bertambah 1 untuk setiap jawaban benar
-- Timer 60 detik per soal: Jika waktu habis, soal dilewati dan skor berkurang 1
-- Layar hasil berisi skor akhir dan rincian semua jawaban
-- Tombol ulangi kuis
+- Start screen with quiz details and a "start" button
+- Questions displayed as cards, with the answer as buttons
+- Corect answers turn green, wrong answers turn red, and the correct answer is always highlighted
+- Score increases by 1 for every correct answer
+- 60-second timer question: if time runs out, the question is skipped and the score decrases by 1
+- Results screen shpwing the final score and a breakdown of all answer
+- Restart button to retake the quiz
 
-## Teknologi
+## Tech Stack
 
 - React 18
 - Vite
-- State management dengan 'UseReducer'
-- Data soal dalam format JSON
+- State management with 'UseReducer'
+- Quizz data in JSON format
 
-## Struktur Folder
+## Folder Structure
 
 ```
 src/
-    data/questions.json     # data soal dan pengaturan kuis
+    data/questions.json     # quiz questions and settings
     components/
-        StartScreen.jsx     # layar awal
-        QuestionCard.jsx    # kartu soal + timer
-        ResultScreen.jsx    # layar hasil
-    quizReducer.js          # logika state kuis
-    App.jsx                 # Menentukan layar yang tampil
+        StartScreen.jsx     # start screen
+        QuestionCard.jsx    # question card + timer
+        ResultScreen.jsx    # results screen
+    quizReducer.js          # Quiz state logic
+    App.jsx                 # decides which screen to show
     main.jsx                # entry point
     styles.css              # styling
 ```
 
-## Menambah soal
+## Adding Questions
 
-Edit `src/data/questions.json`. Setiap soal berformat:
+Edit `src/data/questions.json`. Each question uses this format:
 
 ```json
 {
   "id": 9,
-  "question": "Teks pertanyaan?",
+  "question": "Question text?",
   "options": ["A", "B", "C", "D"],
   "answer": 1
 }
 ```
 
-'answer' adalah nomor urut jawaban yang benar, dimulai dari 0
+'answer' is the index of the correct option, starting from 0.
