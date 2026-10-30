@@ -1,0 +1,29 @@
+{
+  "title": "Kuis Dasar Web Development",
+  "description": "Uji pengetahuan dasar HTML, CSS, JavaScript, dan React kamu. Ada 8 pertanyaan pilihan ganda. Setiap pertanyaan punya waktu 1 menit. Jawaban benar menambah skor +1, sedangkan jika waktu habis tanpa menjawab, soal dilewati dan skor dikurangi 1.",
+  "timePerQuestion": 60,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Tag HTML mana yang digunakan untuk membuat tautan (link)?",
+      "options": [
+        "<link>",
+        "<a>",
+        "<href>",
+        "<url>"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "question": "Properti CSS apa yang dipakai untuk mengubah warna teks?",
+      "options": [
+        "font-color",
+        "text-color",
+        "color",
+        "foreground"
+      ],
+      "answer": 2
+    }
+  ]
+}
